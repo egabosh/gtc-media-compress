@@ -5,7 +5,7 @@
 
     - name: gtc-media-compress
       ansible.builtin.get_url:
-        url: gtc-media-compress.sh
+        url: https://raw.githubusercontent.com/egabosh/gtc-media-compress/refs/heads/main/gtc-media-compress.sh
         dest: /usr/local/bin/gtc-media-compress.sh
         mode: '0555'
         owner: root
@@ -15,7 +15,7 @@
 
     - name: gtc-media-compress startmenu
       ansible.builtin.get_url:
-        url: gtc-media-compress.desktop
+        url: https://raw.githubusercontent.com/egabosh/gtc-media-compress/refs/heads/main/gtc-media-compress.desktop
         dest: /usr/share/applications/gtc-media-compress.desktop
         mode: '0444'
         owner: root
