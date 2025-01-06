@@ -1,0 +1,25 @@
+---
+- name: gtc-media-compress
+  hosts: all
+  tasks:
+
+    - name: gtc-media-compress
+      ansible.builtin.get_url:
+        url: gtc-media-compress.sh
+        dest: /usr/local/bin/gtc-media-compress.sh
+        mode: '0555'
+        owner: root
+        group: root
+        force: yes
+        backup: yes
+
+    - name: gtc-media-compress startmenu
+      ansible.builtin.get_url:
+        url: gtc-media-compress.desktop
+        dest: /usr/share/applications/gtc-media-compress.desktop
+        mode: '0444'
+        owner: root
+        group: root
+        force: yes
+
+

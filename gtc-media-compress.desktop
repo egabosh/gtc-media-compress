@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Compress media files
+Comment=
+Exec=gnome-terminal --window -- /usr/local/bin/gtc-media-compress.sh
+Path=
+Icon=applications-multimedia-symbolic
+Terminal=false
+StartupNotify=false
+Type=Application
+Categories=AudioVideo;
